@@ -14,9 +14,12 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <Icon name="Sparkles" size={28} />
-              <h3 className="text-xl font-bold">Не волосы</h3>
+            <div className="mb-4">
+              <img 
+                src="https://cdn.poehali.dev/files/5e50b313-ba5f-4bc9-adf1-11afc4d25d81.jpg" 
+                alt="Не волосы логотип" 
+                className="h-16 w-auto object-contain brightness-0 invert"
+              />
             </div>
             <p className="text-slate-300 text-sm">
               Студия афроплетения и дредов в селе Высокая Гора, Казань

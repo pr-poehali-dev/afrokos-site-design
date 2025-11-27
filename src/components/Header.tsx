@@ -30,11 +30,12 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-lg border-b border-border shadow-sm">
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Icon name="Sparkles" className="text-primary" size={32} />
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent">
-              Не волосы
-            </h1>
+          <div className="flex items-center gap-3">
+            <img 
+              src="https://cdn.poehali.dev/files/5e50b313-ba5f-4bc9-adf1-11afc4d25d81.jpg" 
+              alt="Не волосы логотип" 
+              className="h-12 w-auto object-contain"
+            />
           </div>
           
           <div className="hidden lg:flex gap-6 items-center">
@@ -78,11 +79,12 @@ const Header = () => {
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
               <div className="flex flex-col gap-6 mt-8">
-                <div className="flex items-center gap-2 pb-4 border-b">
-                  <Icon name="Sparkles" className="text-primary" size={28} />
-                  <h2 className="text-xl font-bold bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent">
-                    Не волосы
-                  </h2>
+                <div className="flex items-center justify-center pb-4 border-b">
+                  <img 
+                    src="https://cdn.poehali.dev/files/5e50b313-ba5f-4bc9-adf1-11afc4d25d81.jpg" 
+                    alt="Не волосы логотип" 
+                    className="h-16 w-auto object-contain"
+                  />
                 </div>
                 
                 <nav className="flex flex-col gap-4">
