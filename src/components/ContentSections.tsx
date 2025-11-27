@@ -68,17 +68,17 @@ const priceList = [
 
 const portfolio = [
   {
-    image: 'https://cdn.poehali.dev/projects/be2e5e38-62bb-474e-8176-b0582fbab281/files/654985ba-71d9-4730-a57d-c6646429efb5.jpg',
+    image: 'https://cdn.poehali.dev/projects/be2e5e38-62bb-474e-8176-b0582fbab281/files/de08542e-64c5-4fb6-95a2-fb4078168896.jpg',
     title: 'Цветные афрокосы',
     category: 'Афрокосы'
   },
   {
-    image: 'https://cdn.poehali.dev/projects/be2e5e38-62bb-474e-8176-b0582fbab281/files/dd70c363-1a97-47b4-a409-5fc7cc96d7d7.jpg',
+    image: 'https://cdn.poehali.dev/projects/be2e5e38-62bb-474e-8176-b0582fbab281/files/ba89b2be-8a00-42a0-bb58-205a9cd51a26.jpg',
     title: 'Боксерские косы',
     category: 'Боксы'
   },
   {
-    image: 'https://cdn.poehali.dev/projects/be2e5e38-62bb-474e-8176-b0582fbab281/files/2e59d9ab-7c69-4967-bfda-6b07ab31be84.jpg',
+    image: 'https://cdn.poehali.dev/projects/be2e5e38-62bb-474e-8176-b0582fbab281/files/06e0b81c-bab9-40ad-bb95-2b6296c88acc.jpg',
     title: 'Процесс плетения',
     category: 'Работа'
   }

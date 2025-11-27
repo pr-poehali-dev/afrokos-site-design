@@ -51,7 +51,7 @@ const HeroSection = () => {
           <div className="relative animate-scale-in">
             <div className="absolute -inset-4 bg-gradient-to-r from-primary via-accent to-secondary rounded-3xl opacity-20 blur-3xl"></div>
             <img
-              src="https://cdn.poehali.dev/projects/be2e5e38-62bb-474e-8176-b0582fbab281/files/654985ba-71d9-4730-a57d-c6646429efb5.jpg"
+              src="https://cdn.poehali.dev/projects/be2e5e38-62bb-474e-8176-b0582fbab281/files/de08542e-64c5-4fb6-95a2-fb4078168896.jpg"
               alt="Афроплетение"
               className="relative rounded-3xl shadow-2xl w-full object-cover aspect-square"
             />
