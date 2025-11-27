@@ -9,7 +9,7 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 animate-fade-in">
-            <Badge className="bg-primary text-primary-foreground">Студия афроплетения №1</Badge>
+            <Badge className="bg-primary text-primary-foreground">Студия афроплетения в Казани</Badge>
             <h1 className="text-5xl md:text-6xl font-bold leading-tight">
               Твой стиль —{' '}
               <span className="bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent">
@@ -17,7 +17,7 @@ const HeroSection = () => {
               </span>
             </h1>
             <p className="text-xl text-muted-foreground">
-              Профессиональное афроплетение, дреды и боксерские косы. Более 500 довольных клиентов за 2024 год!
+              Профессиональное афроплетение, дреды и боксерские косы в Казани и селе Высокая Гора. Более 500 довольных клиентов!
             </p>
             <div className="flex flex-wrap gap-4">
               <Button size="lg" className="bg-primary hover:bg-primary/90 group">

@@ -15,6 +15,13 @@ const Header = () => {
     { href: '#booking', label: 'Запись' }
   ];
 
+  const socialLinks = [
+    { href: 'https://www.instagram.com/afro_vg?igsh=MTBhZ3d2MzEwOThjcg==', icon: 'Instagram', label: 'Instagram' },
+    { href: 'https://t.me/Galisenok', icon: 'Send', label: 'Telegram' },
+    { href: 'https://wa.me/message/QIHVUFNF4BLWB1', icon: 'MessageCircle', label: 'WhatsApp' },
+    { href: 'https://vk.com/afro_vg', icon: 'Share2', label: 'VK' }
+  ];
+
   const handleLinkClick = () => {
     setOpen(false);
   };
@@ -30,7 +37,7 @@ const Header = () => {
             </h1>
           </div>
           
-          <div className="hidden md:flex gap-6">
+          <div className="hidden lg:flex gap-6 items-center">
             {navLinks.map((link) => (
               <a
                 key={link.href}
@@ -40,12 +47,28 @@ const Header = () => {
                 {link.label}
               </a>
             ))}
+            <div className="flex gap-2 ml-2">
+              {socialLinks.map((social) => (
+                <a
+                  key={social.href}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                  aria-label={social.label}
+                >
+                  <Icon name={social.icon} size={18} />
+                </a>
+              ))}
+            </div>
           </div>
           
-          <Button className="hidden md:inline-flex" size="sm">
-            <Icon name="Phone" size={16} className="mr-2" />
-            +7 (999) 123-45-67
-          </Button>
+          <a href="tel:+79083308803" className="hidden lg:inline-flex">
+            <Button size="sm">
+              <Icon name="Phone" size={16} className="mr-2" />
+              +7 (908) 330-88-03
+            </Button>
+          </a>
 
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
@@ -76,20 +99,40 @@ const Header = () => {
                 </nav>
 
                 <div className="pt-4 border-t">
-                  <Button className="w-full" size="lg">
-                    <Icon name="Phone" size={20} className="mr-2" />
-                    +7 (999) 123-45-67
-                  </Button>
+                  <a href="tel:+79083308803" className="block">
+                    <Button className="w-full" size="lg">
+                      <Icon name="Phone" size={20} className="mr-2" />
+                      +7 (908) 330-88-03
+                    </Button>
+                  </a>
                 </div>
 
                 <div className="pt-4 space-y-2 text-sm text-muted-foreground">
                   <div className="flex items-center gap-2">
                     <Icon name="MapPin" size={16} />
-                    г. Москва, ул. Примерная, 123
+                    С. Высокая Гора, Мелиораторов 9в, 225 кабинет
                   </div>
                   <div className="flex items-center gap-2">
                     <Icon name="Clock" size={16} />
-                    Пн-Пт: 10:00 - 21:00
+                    Пн-Пт: 10:00 - 20:00
+                  </div>
+                </div>
+
+                <div className="pt-4 border-t">
+                  <p className="text-sm font-medium mb-3">Мы в соцсетях</p>
+                  <div className="flex gap-3">
+                    {socialLinks.map((social) => (
+                      <a
+                        key={social.href}
+                        href={social.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-10 h-10 rounded-lg bg-primary/10 hover:bg-primary/20 flex items-center justify-center transition-colors"
+                        aria-label={social.label}
+                      >
+                        <Icon name={social.icon} size={20} className="text-primary" />
+                      </a>
+                    ))}
                   </div>
                 </div>
               </div>

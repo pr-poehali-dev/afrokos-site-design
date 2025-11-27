@@ -2,6 +2,13 @@ import { Button } from '@/components/ui/button';
 import Icon from '@/components/ui/icon';
 
 const Footer = () => {
+  const socialLinks = [
+    { href: 'https://www.instagram.com/afro_vg?igsh=MTBhZ3d2MzEwOThjcg==', icon: 'Instagram', label: 'Instagram' },
+    { href: 'https://t.me/Galisenok', icon: 'Send', label: 'Telegram' },
+    { href: 'https://wa.me/message/QIHVUFNF4BLWB1', icon: 'MessageCircle', label: 'WhatsApp' },
+    { href: 'https://vk.com/afro_vg', icon: 'Share2', label: 'VK' }
+  ];
+
   return (
     <footer className="bg-slate-900 text-white py-12">
       <div className="container mx-auto px-4">
@@ -12,45 +19,51 @@ const Footer = () => {
               <h3 className="text-xl font-bold">Не волосы</h3>
             </div>
             <p className="text-slate-300 text-sm">
-              Студия афроплетения и дредов в самом сердце города
+              Студия афроплетения и дредов в селе Высокая Гора, Казань
             </p>
           </div>
           <div>
             <h4 className="font-semibold mb-4">Контакты</h4>
             <div className="space-y-2 text-sm text-slate-300">
-              <div className="flex items-center gap-2">
+              <a href="tel:+79083308803" className="flex items-center gap-2 hover:text-white transition-colors">
                 <Icon name="Phone" size={16} />
-                +7 (999) 123-45-67
-              </div>
-              <div className="flex items-center gap-2">
+                +7 (908) 330-88-03
+              </a>
+              <a href="mailto:nevolosy@studio.ru" className="flex items-center gap-2 hover:text-white transition-colors">
                 <Icon name="Mail" size={16} />
-                info@nevolosy.ru
-              </div>
-              <div className="flex items-center gap-2">
-                <Icon name="MapPin" size={16} />
-                г. Москва, ул. Примерная, 123
+                nevolosy@studio.ru
+              </a>
+              <div className="flex items-start gap-2">
+                <Icon name="MapPin" size={16} className="mt-0.5 flex-shrink-0" />
+                <span>С. Высокая Гора, Мелиораторов 9в, 225 кабинет</span>
               </div>
             </div>
           </div>
           <div>
             <h4 className="font-semibold mb-4">Режим работы</h4>
             <div className="space-y-2 text-sm text-slate-300">
-              <p>Пн-Пт: 10:00 - 21:00</p>
-              <p>Сб-Вс: 11:00 - 20:00</p>
+              <p>Пн-Пт: 10:00 - 20:00</p>
+              <p className="text-xs">(По предварительной записи)</p>
+              <p className="pt-2">Сб-Вс: 10:00 - 19:00</p>
+              <p className="text-xs">(По предварительной записи)</p>
             </div>
           </div>
           <div>
             <h4 className="font-semibold mb-4">Мы в соцсетях</h4>
-            <div className="flex gap-4">
-              <Button variant="outline" size="icon" className="bg-white/10 hover:bg-white/20 border-0">
-                <Icon name="Instagram" size={20} />
-              </Button>
-              <Button variant="outline" size="icon" className="bg-white/10 hover:bg-white/20 border-0">
-                <Icon name="MessageCircle" size={20} />
-              </Button>
-              <Button variant="outline" size="icon" className="bg-white/10 hover:bg-white/20 border-0">
-                <Icon name="Phone" size={20} />
-              </Button>
+            <div className="flex flex-wrap gap-3">
+              {socialLinks.map((social) => (
+                <a
+                  key={social.href}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={social.label}
+                >
+                  <Button variant="outline" size="icon" className="bg-white/10 hover:bg-white/20 border-0">
+                    <Icon name={social.icon} size={20} />
+                  </Button>
+                </a>
+              ))}
             </div>
           </div>
         </div>
